@@ -1,1 +1,58 @@
-
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "logicAppName": {
+      "value": "Hybrid.AzA.BizB.InventoryOnHand"
+    },
+    "RecurrenceFrequency": {
+      "value": "Day"
+    },
+    "RecurrenceInterval": {
+      "value": 1
+    },
+    "RecurrenceSchedule": {
+      "value": {
+        "hours": [
+          "7"
+        ],
+        "minutes": [
+          0
+        ]
+      }
+    },
+    "servicebus-4_name": {
+      "value": "servicebus-4"
+    },
+    "servicebus-4_displayName": {
+      "value": "orderreturns"
+    },
+    "servicebus_namespace_name": {
+      "value": "REPLACE__servicebus_namespace"
+    },
+    "servicebus_resourceGroupName": {
+      "value": "REPLACE__servicebus_rg"
+    },
+    "servicebus_accessKey_name": {
+      "value": "RootManageSharedAccessKey"
+    },
+    "sql-7_name": {
+      "value": "sql-7"
+    },
+    "sql-7_displayName": {
+      "value": "testsqldb test-poc-sqldb-server.database.windows.net"
+    },
+    "sql-7_server": {
+      "value": "test-poc-sqldb-server.database.windows.net"
+    },
+    "sql-7_database": {
+      "value": "testsqldb"
+    },
+    "sql-7_username": {
+      "value": null
+    },
+    "sql-7_password": {
+      "value": null
+    }
+  }
+}
